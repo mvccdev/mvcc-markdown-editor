@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>
+	<head>
+		<!--#link-->
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mvccdev/mvcc-objects-css@main/dist/mvcc.css">
+		
+		<!--#scripts-->
+ 
+	</head>
+	<body style="margin: 1.5rem">
+
+		<!--#heading-->
+		
+		<h1>Examples</h1>
+		
+		<!--#mMarkdown-->
+		
+		<p><strong>Markdown Editor</strong></p>
+		 
+		<mvcc-markdown-editor style="margin-bottom: 3rem;" id="my-markdown-editor" buttons="h1, h2, h3, h4, bold, italic, bullets, numbers, link, hr">
+			The quick brown fox jumped over the lazy dog.
+		</mvcc-markdown-editor>
+		 
+		<!--#wysiwyg-->
+
+		<p><strong>WYSIWYG Editor</strong></p>
+		 
+		<mvcc-wysiwyg-editor style="margin-bottom: 3rem;" id="my-wysiwyg-editor" buttons="h1, h2, h3, h4, bold, italic, strikethrough, superscript, subscript, bullets, numbers, outdent, indent, link, hr">
+			The quick brown fox jumped over the lazy dog.
+		</mvcc-wysiwyg-editor>
+
+		<!--#scripts0-->
+
+		<script src="https://cdn.jsdelivr.net/gh/mvccdev/mvcc-component-js@main/dist/mvcc-component.min.js"></script>
+		<script src="/scripts/mvcc-markdown-editor.js"></script>
+		<script src="/scripts/mvcc-wysiwyg-editor.js"></script>
+		<script>		 
+			/**
+			 * Markdown text
+			 */
+			document.getElementById("my-markdown-editor").text = `The **quick brown fox** jumped over the lazy dog.`;
+ 
+			/**
+			 * Wysiwyg text
+			 */
+			document.getElementById("my-wysiwyg-editor").text = `The quick <strong>brown fox</strong> jumped over the lazy dog.`;
+		</script>
+	</body>
+</html>

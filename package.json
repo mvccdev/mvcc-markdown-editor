@@ -1,0 +1,20 @@
+{
+	"name": "mvcc-markdown-editor",
+	"version": "1.0.0",
+	"description": "A markdown editor built using mvcc-component and mvcc-objects.",
+	"main": "mvcc-markdown-editor.js",
+	"scripts": {
+	  "test": "echo \"Error: no test specified\" && exit 1",
+	  "build": "minify ./src/mvcc-markdown-editor.js > ./dist/mvcc-markdown-editor.js"
+	},
+	"keywords": [
+	  "mvcc",
+	  "JavaScript"
+	],
+	"author": "Eric Harms",
+	"license": "MIT",
+	"devDependencies": {
+	  "minify": "^8.0.3"
+	},
+	"dependencies": {}
+  }
